@@ -37,7 +37,7 @@ module.exports = class Wish {
 
     static fetchAllWishes(callBack){
         fs.readFile(filePath, (error, fileContent) => {
-            if(!error) {
+            if(error) {
                 callBack([]);
             };
 
